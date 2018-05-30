@@ -1,0 +1,52 @@
+.container {
+  background-color: aquamarine;
+}
+
+.row {
+  background-color: antiquewhite;
+}
+
+.col-4 {
+  border: 1px solid skyblue;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+} 
+
+.firstSection {
+  text-align: justify;
+  font-family: 'Asap', sans-serif;
+  padding: 5%;
+}
+
+li {
+  list-style:none;
+  font-family: 'Indie Flower', cursive;
+}
+  
+ /*el media query siempre va al finLal*/
+@media (min-width: 200px) and (max-width: 424px) {
+  [class*='col-'] {
+    width: 100%;
+    text-align: center;
+  }
+  .kitty {
+    content: url(../img/gatito-tumbado-lamiendo-sus-patitas.jpg)
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  [class*='col-'] {
+    width: 100%;
+    text-align: center;
+  }
+  .kitty {
+    content: url(../img/Noticia-181438-trabaja-abrazando-a-gatitos-en-irlanda.jpg);
+  }
+}
